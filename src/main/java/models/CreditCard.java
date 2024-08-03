@@ -17,7 +17,7 @@ public class CreditCard implements PaymentType{
     }
 
     @Override
-    public String checkStatus(String amount) {
+    public PaymentStatus checkStatus(String amount) {
         return null;
     }
 }
