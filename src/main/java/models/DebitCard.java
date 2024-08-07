@@ -4,13 +4,26 @@ import java.math.BigDecimal;
 
 public class DebitCard implements PaymentType{
 
-    public String bankNumber;
-    public String agencyNumber;
-    public String accountNumber;
-    public String cvc;
-    public String name;
-    public String brand;
+    private String bankNumber;
+    private String agencyNumber;
+    private String accountNumber;
+    private String brand;
 
+    public String getBankNumber() {
+        return bankNumber;
+    }
+
+    public String getAgencyNumber() {
+        return agencyNumber;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
 
     @Override
     public String payment(BigDecimal amount) {
