@@ -1,3 +1,9 @@
+```mermaid
+
+---
+title: Class Diagram
+---
+
 classDiagram
     class PaymentType{
         <<interface>>
