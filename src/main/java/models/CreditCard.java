@@ -1,15 +1,30 @@
 package models;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class CreditCard implements PaymentType{
 
-    public String number;
-    public String cvc;
-    public String validationDate;
-    public String name;
-    public String brand;
+    private String number;
+    private String cvc;
+    private Date validationDate;
+    private String brand;
 
+    public String getNumber() {
+        return number;
+    }
+
+    public String getCvc() {
+        return cvc;
+    }
+
+    public Date getValidationDate() {
+        return validationDate;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
 
     @Override
     public String payment(BigDecimal amount) {
