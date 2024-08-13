@@ -2,8 +2,8 @@ package models;
 
 public class PaymentStatus {
 
-    public String status;
-    public String description;
+    private String status;
+    private String description;
 
     public String getStatus() {
         return status;
