@@ -26,7 +26,7 @@ public class DebitCard implements PaymentType{
     }
 
     @Override
-    public String payment(BigDecimal amount) {
+    public String payment(BigDecimal statusName) {
         return null;
     }
 
