@@ -31,7 +31,7 @@ public class DebitCard implements PaymentType{
     }
 
     @Override
-    public PaymentStatus checkStatus(String amount) {
+    public PaymentStatus checkStatus(String statusName) {
         return null;
     }
 }
