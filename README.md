@@ -34,6 +34,23 @@ classDiagram
         checkStatus(hash) PaymentStatus
     }
 
+    class GatewayMastercard{
+        processPayment(card, amount) String
+        verifyPayment(hash) PaymentStatus
+    }
+
+    class GatewayVisa{
+        processPayment(card, amount) String
+        verifyPayment(hash) PaymentStatus
+
+    }
+
+
     DebitCard ..|> PaymentType : implements
     CreditCard ..|> PaymentType : implements
     PaymentType ..> PaymentStatus
+
+    DebitCard --> GatewayType : uses
+    CreditCard --> GatewayType : uses
+    GatewayMastercard ..|> GatewayType : implements
+    GatewayVisa ..|> GatewayType : implements
